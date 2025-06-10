@@ -1,0 +1,66 @@
+/* Styling the whole page to set base font, spacing, and background */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Clean, readable font family */
+  line-height: 1.5; /* Extra line spacing for better readability */
+  margin: 0; /* Remove default margin around the page */
+  background-color: #7251B5; /* Soft purple background */
+}
+
+/* Headers should have no extra space below them */
+h1, h2, h3 {
+  margin-bottom: 0; /* Keeping things tight under headings */
+}
+
+/* Making the company name stand out slightly */
+#company-name {
+  font-size: 1.5rem; /* Slightly larger than default text */
+}
+
+/* Giving header and footer a dark look with light text for contrast */
+header, footer {
+  background-color: #000; /* Solid black background */
+  color: #DEC9E9; /* Light purple text to match the theme */
+}
+
+/* Wrapper to contain content nicely in the center */
+.wrapper {
+  max-width: 940px; /* Keep layout from getting too wide */
+  margin: 0 auto; /* Centering horizontally */
+  padding: 2em; /* Breathing room inside the container */
+}
+
+/* Remove default list styling for both unordered and ordered lists */
+ul, ol {
+  padding: 0; /* No indent on list */
+  list-style: none; /* Hide bullets/numbers */
+}
+
+/* Styling links that are inside the nav only */
+nav a {
+  color: #DEC9E9; /* Matching the footer/header text color */
+  text-decoration: none; /* Removing underline from links */
+}
+
+/* The section that comes immediately after #intro gets dark theme too */
+#intro + section {
+  background-color: #000; /* Make it black like header/footer */
+  color: #DEC9E9; /* Light text to pop on dark background */
+}
+
+/* Direct images inside articles get styled as circular black-and-white images */
+article > img {
+  width: 150px; /* Fixed width */
+  border-radius: 50%; /* Perfect circle */
+  filter: grayscale(100%); /* Black-and-white effect */
+  margin-top: 1em; /* Space above image */
+}
+
+/* Color every even item in ordered lists differently for variety */
+ol li:nth-child(even) {
+  color: #dc33dc; /* Bright pink-purple color for even items */
+}
+
+/* Direct images inside the main tag get full width of the container */
+main > img {
+  width: 100%; /* Full responsive width */
+}
